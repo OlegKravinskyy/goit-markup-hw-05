@@ -655,18 +655,14 @@ ol {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
-/* 
-.butn {
-  width: 100px;
-  height: 50px;
-  background-color: #188ce8;
-  position: absolute;
-  transform: translate(-50%, -50%);
-  top: 50%;
-  left: 50%;
-  opacity: 0;
-} */
 
-/* .flex-element:hover .butn {
-  opacity: 1;
-} */
+.modal-close-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  background-color: var(--logo-color-two);
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
