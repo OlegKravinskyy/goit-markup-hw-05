@@ -626,6 +626,8 @@ ol {
 .portfolio-btn-style:hover {
   background-color: var(--logo-color-left);
   color: var(--logo-color-two);
+  transition: background-color var(--main-transition-time) var(--cubic),
+    color var(--main-transition-time) var(--cubic);
 }
 
 .footer-item {
