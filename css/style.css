@@ -80,11 +80,6 @@ ol {
   margin-right: 50px;
 }
 
-.header-link-pages:hover {
-  color: var(--logo-color-left);
-  transition: color var(--main-transition-time) var(--cubic);
-}
-
 .header-connect {
   margin-left: auto;
 }
@@ -103,6 +98,11 @@ ol {
   letter-spacing: 0.02em;
   padding: 32px 0;
   color: var(--secondary-color);
+  transition: color var(--main-transition-time) var(--cubic);
+}
+
+.header-link-pages:hover {
+  color: var(--logo-color-left);
 }
 
 .header-link-pages.current::after {
@@ -125,6 +125,7 @@ ol {
   display: flex;
   align-items: center;
   color: var(--main-color);
+  transition: color var(--main-transition-time) var(--cubic);
 }
 
 .header-item {
@@ -134,16 +135,15 @@ ol {
 
 .header-link:hover {
   color: var(--logo-color-left);
-  transition: color var(--main-transition-time) var(--cubic);
-}
-
-.header-link:hover .header-icon {
-  fill: var(--logo-color-left);
-  transition: fill var(--main-transition-time) var(--cubic);
 }
 
 .header-icon {
   margin-right: 10px;
+  transition: fill var(--main-transition-time) var(--cubic);
+}
+
+.header-link:hover .header-icon {
+  fill: var(--logo-color-left);
 }
 
 .hidden-title {
@@ -310,6 +310,8 @@ ol {
   border-radius: 50%;
   display: block;
   background-color: rgba(255, 255, 255, 0.1);
+  transition: background-color var(--main-transition-time) var(--cubic),
+    fill var(--main-transition-time) var(--cubic);
 }
 
 .team-soc-item + .team-soc-item {
@@ -322,12 +324,10 @@ ol {
 
 .team-soc-link:hover {
   background-color: var(--logo-color-left);
-  transition: background-color var(--main-transition-time) var(--cubic);
 }
 
 .team-soc-link:hover .team-soc-icon {
   fill: var(--logo-color-two);
-  transition: fill var(--main-transition-time) var(--cubic);
 }
 
 .section-btn {
@@ -347,16 +347,11 @@ ol {
   border-radius: 4px;
   background-color: var(--logo-color-left);
   color: var(--logo-color-two);
+  transition: background-color var(--main-transition-time) var(--cubic);
 }
 
 .section-btn:hover {
   background-color: var(--btn-hover-color);
-  transition: background-color var(--main-transition-time) var(--cubic);
-}
-
-.section-btn-portfolio:hover {
-  background-color: var(--btn-hover-color);
-  transition: background-color var(--main-transition-time) var(--cubic);
 }
 
 .section-btn-portfolio {
@@ -377,6 +372,11 @@ ol {
   border-radius: 4px;
   background-color: var(--logo-color-left);
   color: var(--logo-color-two);
+  transition: background-color var(--main-transition-time) var(--cubic);
+}
+
+.section-btn-portfolio:hover {
+  background-color: var(--btn-hover-color);
 }
 
 .section-about {
@@ -493,6 +493,8 @@ ol {
   align-items: center;
   fill: var(--color-icon);
   cursor: pointer;
+  transition: fill var(--main-transition-time) var(--cubic),
+    border-color var(--main-transition-time) var(--cubic);
 }
 
 .clients-item:not(:last-child) {
@@ -502,9 +504,8 @@ ol {
 .clients-item:hover {
   border-color: var(--logo-color-left);
   fill: var(--logo-color-left);
-  transition: fill var(--main-transition-time) var(--cubic),
-    border-color var(--main-transition-time) var(--cubic);
 }
+
 .adress-text {
   font-style: normal;
   line-height: 1.71;
@@ -541,12 +542,12 @@ ol {
 .flex-element {
   flex-basis: calc((100% - 90px) / 3);
   margin-left: 30px;
+  transition: box-shadow var(--main-transition-time) var(--cubic);
 }
 
 .flex-element:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-  transition: box-shadow var(--main-transition-time) var(--cubic);
 }
 
 .portfolio-item:nth-child(3n) {
@@ -617,6 +618,8 @@ ol {
   background: var(--section-team-color);
   border-radius: 4px;
   color: var(--secondary-color);
+  transition: background-color var(--main-transition-time) var(--cubic),
+    color var(--main-transition-time) var(--cubic);
 }
 
 .portfolio-img-block {
@@ -626,8 +629,6 @@ ol {
 .portfolio-btn-style:hover {
   background-color: var(--logo-color-left);
   color: var(--logo-color-two);
-  transition: background-color var(--main-transition-time) var(--cubic),
-    color var(--main-transition-time) var(--cubic);
 }
 
 .footer-item {
